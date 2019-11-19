@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts-awesome.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <title>Hello, world!</title>
+  </head>
+<body>
+<div class="container-fluid navbar navbar-expand-xl navbar-light sticky-top headerbackground menupos pos" id='navmenu' >
+        <div class="container fhlb-lg px-32" id='mobilemenu'>
+        <a class="navbar-brand" href="index.html">
+            <div class="logo m-0">
+                <img src="img/logo.png" alt="Federal Home Loan Bank of San Francisco" />
+            </div>
+        </a>
+
+        
+        <div class="float-right">
+			<div class="float-left bordermodel" >
+				<button type="button" class="btn nav-btn btnsearch" data-toggle="collapse" data-target="#collapsiblemenu" aria-controls="collapsiblemenu" aria-expanded="false" onclick='displaysearch()'>
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+			</div>
+			
+			<div class="float-left">
+				<button type="button" class="btn nav-btn btnmenu" data-toggle="collapse" data-target="#collapsiblemenu" aria-controls="collapsiblemenu" aria-expanded="false" onclick='displaymenu()'>
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="float-left" >
+				<button type="button" class="btn nav-btn" style='display:none' id='close' onclick='closes()' >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+			</div>
+        </div>
+
+       <div class="float-right mobilecontainer">
+        <div class="my-1 p-0 float-right text-right firstmenu">
+                        <div class="rightfirstmenu p-0 text-left">
+                            <ul class="my-1">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Member Login</a></li>
+                            </ul>
+                        </div>
+        </div>
+
+       <div class="collapse navbar-collapse align-self-end float-right right1" id="collapsiblemenu">
+            <ul class="navbar-nav ml-auto collmenu" >
+                <li class="nav-item dropdown mainmenu-li">
+				   <a class="nav-link dropdown-toggle" href="#" id="dropdown01-dis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Members  &nbsp;<span class="caret down"></span> </a>
+						<ul class="dropdown-menu mainmenu" aria-labelledby="dropdown01-dis">	
+							<li><a href="#">Our Products</a></li>
+                            <li><a href="#">Become a Member</a></li>
+                            <li><a href="#">Case Studies &amp; Testmonials</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Member Directory</a></li>
+                        </ul>
+				</li>
+				<li class="nav-item dropdown mainmenu-li">
+				   <a class="nav-link dropdown-toggle" href="community-programs.html" id="dropdown01-dis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community Programs &nbsp;<span class="caret down"></span>
+				   </a>
+						<ul class="dropdown-menu mainmenu" aria-labelledby="dropdown01-dis" >
+                                <li><a href="grant-programs.html">Grant Programs</a></li>
+                                <li><a href="#">Credit Programs</a></li>
+                                <li><a href="#">Community Works</a></li>
+                                <li><a href="spotlight.html">Spotlight</a></li>
+                        </ul>
+				</li>
+				<li class="nav-item dropdown mainmenu-li">
+				   <a class="nav-link dropdown-toggle" href="#" id="dropdown01-dis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		Resources &nbsp;<span class="caret down"></span>
+				   </a>
+						<ul  class="dropdown-menu mainmenu" aria-labelledby="dropdown01-dis">
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+				</li>
+               
+                <li class="nav-item dropdown mainmenu-li"> 
+				   <a class="nav-link dropdown-toggle" href="#" id="dropdown01-dis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		Work With Us &nbsp;<span class="caret down"></span>
+				   </a>
+						<ul class="dropdown-menu mainmenu" aria-labelledby="dropdown01-dis">
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Suppliers</a></li>
+                        </ul>
+				</li>
+                <li class="nav-item dropdown mainmenu-li">
+				   <a class="nav-link dropdown-toggle" href="#" id="dropdown01-dis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About &nbsp; <span class="caret down"></span></a>
+						<ul class="dropdown-menu mainmenu" aria-labelledby="dropdown01-dis">
+                                <li><a href="#">Mission &amp; Values</a></li>
+                                <li><a href="#">Our People</a></li>
+                                <li><a href="#">Newsroom</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Government</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Governance</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                        </ul>
+				</li>
+            </ul>
+            <div class="fhlb-search" id='collapsiblesearch'>
+                <form action="" >
+                    <input type="search" class='nav-search' placeholder='Search..'>
+                    <i class="fa fa-search" aria-hidden="true" id='searchinput'></i>
+                </form>
+            </div>
+			<div class='headerbackgroundmobile'></div>
+        </div>
+        </div>
+    </div>
+    </div>
+	<!--<div class="fhlb-banner">
+        <div class="container fhlb-lg">
+            <div class="row px-32 p-5">
+                <div class="col-md-12">
+                        <h1>Page Title </h1>
+						<div class="col-sm-6 p-0"><h1>4.2 Level 4(Article template - "More Detail" closed) </h1></div>
+						<div class="col-sm-6 float-right">
+                <ul class="fhlb-social">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin circle" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+			</div>
+			</div>
+        </div>
+      
+    </div>
+	
+	<div class="container-fluid">
+		<div class="row border-top border-bottom">
+			<div class="col-sm-12">
+				<div class="submenu">
+					<ul>
+						<li><a href="#">Grant Programs</a></li>
+						<li><a href="">Credit Programs</a></li>
+						<li><a href="">Community Works</a></li>
+						<li><a href="spotlight.html" class="active">Spotlight</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<div class="p-3"></div>
+	<div class="container-fluid">
+		<div class="container fhlb-lg p-0 header-com-m">
+			<div class="row sub px-32 m-0">
+				<div class="col col-md-12 col-lg-12 col-sm-12 p-0">
+					<h2>Article Title : Helping Bayview Women Unleash Their Inner Entrepreneurs</h2></div>
+				</div>
+				<div class="row sub px-32 m-0">
+				<div class="col col-md-12 col-lg-12 col-sm-12 p-0"><img src="img/spotlight-banner.png" alt="" class='img-fluid sectionimg'/></div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="p-3"></div>
+	<div class="container-fluid">
+		<div class="container fhlb-lg p-0">
+			<div class="row sub px-32 mb-40 m-0" >
+				<div class="col-md-4 col-lg-4 col-sm-4 p-0">
+					<p><strong>Member:</strong> Santa Cruz County Bank</p>
+					<p><strong>Sponsor:</strong> El Pájaro CDC</p>
+					<p><strong>Award:</strong> $27,725 AHEAD Grant</p>
+				</div>
+			
+				<div class="col-md-4 col-lg-4 col-sm-4 p-0">
+					<p><strong>Member:</strong>Santa Cruz Community Credit Union</p>
+					<p><strong>Sponsor:</strong> El Pájaro CDC</p>
+					<p><strong>Award:</strong> $39,000 AHEAD Grant</p>
+				</div>
+			
+				<div class="col-md-4 col-lg-4 col-sm-4 p-0">
+					<p><strong>Member:</strong> Member Bank</p>
+					<p><strong>Sponsor:</strong> Sponsor Entity</p>
+					<p><strong>Award:</strong> Dollar Amount</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="p-3"></div>
+	<div class="container-fluid">
+		<div class="container fhlb-lg p-0">
+			<div class="row m-0 d-custom-flex">
+				<div class="col col-12 col-sm-12 col-md-6 sub px-32 mb-40">
+					<h2>
+					Pull quote lacinia massa et vehicula imperdiet. Sed metus odio, aliquet sed lorem sed, faucibus iaculis felis. Duis gravida tellus nec lectus lacinia varius non eget diam.
+					</h2>
+					<div class="p-5"></div>
+					<p><strong>Summary copy for story 150-200 words</strong> consectetur adipiscing elit. Pellentesque lacinia massa et vehicula imperdiet. Sed metus odio, aliquet sed lorem sed, faucibus iaculis felis.</p>
+					<p>Duis gravida tellus nec lectus lacinia varius non eget diam. Fusce dapibus vulputate feugiat. Cras tempus lacinia sem dignissim molestie. Nulla semper aliquam eros ut feugiat. Suspendisse finibus nibh et convallis porttitor. Donec eu accumsan quam. Duis est mauris, tempor sed ex nec, suscipit imperdiet elit.</p>
+					<p>Aliquam at lorem faucibus, rutrum felis eget, malesuada ipsum. Duis est mauris, tempor sed ex nec, suscipit imperdiet elit. Sed auctor quam nec neque porttitor, nec vulputate mauris finibus. Etiam rutrum efficitur volutpat.Donec at interdum lacus. Morbi ornare sagittis laoreet. Morbi sed nisi porta, eleifend lectus et, gravida quam. Cras sagittis tortor sit amet vestibulum consequat. Proin facilisis semper tortor quis pretium....</p>				
+				</div>
+			
+				<div class="col col-12 col-sm-12 col-md-6 sub px-32 mb-40 p-0">
+					<div class="my-3">
+						<img src="img/summary-copy-of-story.png" class='img-fluid sectionimg px-32'/>
+					</div>
+					<p class="txt-gray px-32">
+						<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia massa et vehicula imperdiet. Sed metus odio, aliquet sed lorem sed.</strong>
+					</p>
+				</div>
+				<div class="col col-12 col-sm-12 col-md-12 sub px-32 mb-40" id=''>
+				<div class="read-more float-left" id='more'>
+								<a  href='#details' onclick="spotlightFunction(1)">Continue</a>
+				</div>
+						
+				<div class="collapse" id='details' style='display:none'>
+				  <div class="well text-left">
+					<div class="row m-0">
+						<div class="col col-12 col-sm-12 col-md-12 sub px-32 mb-40 p-0">
+							<p><strong>continued texts</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+							<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+							
+							<div class="py-2">
+								<img src="img/spotlight-banner.png" class='img-fluid sectionimg'/>
+							</div>
+							
+							<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+							
+						</div>
+						
+						<div class="col-sm-6">
+						
+						</div>
+					</div>
+					
+				  </div>
+				</div>
+			</div>
+			<div class="col col-12">
+				<div class="read-more" style='display:none;' id='less' align='center'>
+					<a href='#details' onclick="spotlightFunction(2)">Less Detail</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+    <div class="p-3"></div>
+	<div class="container-fluid fhlb-bg">
+			<div class="container fhlb-lg p-0">
+				<div class="row py-3 sub px-32 mb-40 m-0">
+					<div class="col-md-6 col-lg-6 col-sm-6">
+						<img src="img/related-story-1.png" class='img-fluid sectionimg'/>
+						<div class="py-3">
+							<h3>Related Story</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus eget lorem non iaculis.</p>
+							<div class="read-more">
+								<a href="">Read more</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-6 col-lg-6 col-sm-6">
+						<img src="img/related-story-2.png" class='img-fluid sectionimg'/>
+						<div class="py-3">
+							<h3>Related Story</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus eget lorem non iaculis.</p>
+							<div class="read-more">
+								<a href="">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!--Footer-->
+	<!-- footer -->
+
+
+
+    <div class="container-fluid">
+    <div class="container fhlb-lg p-0">
+      <div class="row m-0 px-32 py-64">
+        <div class="col-12 p-0 mb-32">
+          <div class="row m-0 d-flex align-items-center">
+            <div class="col foot1 col-12 col-sm-12 col-md-12 p-0 mbf-32">
+              <ul class="fhlb-footer">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Online Security</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Member Login</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col foot2 col-12 col-sm-12 col-md-12 p-0">
+                <ul class="fhlb-social">
+                    <li>
+                      <a href="#"><i class="fa fa-youtube-play circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin circle" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-0">
+            <div class="fhlb-foot">© 2000-2019 FHLBank San Francisco</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
